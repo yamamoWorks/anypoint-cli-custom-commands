@@ -15,7 +15,7 @@ node_modules/anypoint-cli
       - account
       - api-mgr
       - cloudhub
-      - anypoint-cli-custom-extensions  <-- clone here
+      - anypoint-cli-custom-commands  <-- clone here
       -    :
 ```
 
