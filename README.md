@@ -1,4 +1,4 @@
-# anypoint-cli-custom-extensions
+# anypoint-cli-custom-commands
 Custom commands for anypoint-cli.  
 Seamlessly integration with anypoint-cli.
 
