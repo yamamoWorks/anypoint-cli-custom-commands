@@ -11,6 +11,10 @@ module.exports = {
     return fmt(
       '/accounts/api/organizations/%s/users/%s',
       session.selectedOrganization.id, userId)
-  }
-
+  },
+  roles: function (session) {
+    return fmt(
+      '/accounts/api/organizations/%s/rolegroups',
+      session.selectedOrganization.id)
+  },
 }

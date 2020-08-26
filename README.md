@@ -29,7 +29,9 @@ e.g.
 
 ## Command List
 
+    account user list [options]                                  Lists users
     account user create [options] <username> <email> <password>  Create new user
     account user disable [options] <username>                    Disable user
     account user enable [options] <username>                     Enable user
     account user delete [options] <username>                     Delete user
+    account role list [options]                                  Lists roles
