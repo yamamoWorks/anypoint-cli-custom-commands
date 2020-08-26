@@ -29,11 +29,11 @@ function userCreate (session) {
       url: uris.users(session),
       body: {
         username: args.username,
-        firstName: args.options.firstName,
-        lastName: args.options.lastName,
-        email: args.options.email,
-        phoneNumber: args.options.phoneNumber,
-        password: args.options.password
+        firstName: args.firstName,
+        lastName: args.lastName,
+        email: args.email,
+        password: args.password,
+        phoneNumber: args.options.phoneNumber
       }
     }
     return session.post(req)
@@ -95,9 +95,7 @@ module.exports = function (cli, session) {
     .action(userList(session))
 
   cli
-  .command('account user create <username> <email> <password>', 'Create new user')
-  .option('--firstName [firstName]', 'firstName')
-  .option('--lastName [lastName]', 'lastName')
+  .command('account user create <username> <firstName> <lastName> <email> <password>', 'Create new user')
   .option('--phoneNumber [phoneNumber]', 'phoneNumber')
   .types({
     string: ['username', 'firstName', 'lastName', 'email', 'phoneNumber', 'password']
